@@ -4,7 +4,7 @@
 
     param(
         $TimeoutMs = 5000,
-        $Urls #= @( 'https://www.yahoo.com','https://www.google.com','https://www.apple.com' )
+        $Urls = @( 'https://www.apple.com' )
     )
 
     $Oids = @{
