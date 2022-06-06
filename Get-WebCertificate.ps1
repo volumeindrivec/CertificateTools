@@ -1,4 +1,6 @@
-﻿function Get-WebCertificate
+﻿## Does not work in PowerShell 7
+
+function Get-WebCertificate
 {
     [cmdletbinding()]
 
@@ -57,8 +59,8 @@
     }
 
     # Disabling the Certificate Validation Check.
-    [Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }
-
+    [Net.ServicePointManager]::ServerCertificateValidationCallback = $null
+    
     foreach ($Url in $Urls)
     {
     
